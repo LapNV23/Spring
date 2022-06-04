@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "6821ab90-e89a-498a-b1b8-8b6ca653ce8c",
+		"name": "ProductPostMan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18397357"
+	},
+	"item": [
+		{
+			"name": "ProductAPI",
+			"item": [
+				{
+					"name": "Save Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"002\",\r\n    \"name\":\"Snack\",\r\n    \"slug\":\"bim-bim-snack\",\r\n    \"description\":\"a light meal\",\r\n    \"detail\":\"Đồ ăn vặt đóng gói\",\r\n    \"price\":\"10,00\",\r\n    \"image\":\"snack.img\",\r\n    \"brand\":\"Kinh Đô\",\r\n    \"userCre\":\"Lap NV\",\r\n    \"userUp\":\"Lap NV\",\r\n    \"userDel\":\"Lap NV\",\r\n    \"status\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8889/api/v1/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8889",
+							"path": [
+								"api",
+								"v1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All Products",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "FindById",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Deleted Product",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
